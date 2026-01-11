@@ -1,0 +1,80 @@
+:host {
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000;
+}
+
+/* MAIN PAGE WRAPPER */
+.page-wrapper {
+  min-height: 100vh;
+  /* Simple high contrast background */
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* NAVBAR STRIP */
+.navbar {
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  border-bottom: 2px solid #ffffff;
+  /* High contrast border */
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 48px;
+  width: auto;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  /* Slightly larger for readability */
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #ffff00;
+  /* High contrast hover */
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}

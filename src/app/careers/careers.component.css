@@ -1,0 +1,60 @@
+.careers-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    color: #e5e7eb;
+    text-align: center;
+}
+
+.motivational-hero {
+    margin-bottom: 60px;
+}
+
+.motivational-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #f9fafb;
+}
+
+.motivational-title span {
+    color: #cd9a46;
+    /* Gold accent */
+}
+
+.motivational-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cbd5f5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hiring-status {
+    background-color: #0b1221;
+    border: 1px solid #00dad9;
+    /* Cyan accent */
+    border-radius: 12px;
+    padding: 40px;
+    display: inline-block;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 218, 217, 0.1);
+}
+
+.status-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.status-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00dad9;
+    margin-bottom: 12px;
+}
+
+.status-message {
+    font-size: 16px;
+    color: #d1d5db;
+}

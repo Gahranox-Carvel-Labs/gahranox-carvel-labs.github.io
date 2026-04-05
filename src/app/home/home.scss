@@ -1,0 +1,85 @@
+.home-container {
+  min-height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.subtitle {
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #86868B;
+  font-size: 1.5rem;
+}
+
+.main-title {
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+
+.bharath-text {
+  span {
+    display: inline-block;
+    transition: transform 0.3s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  .chakra-icon {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+    font-size: 1.5rem;
+    color: #000080; /* Navy Blue */
+    animation: rotateChakra 10s linear infinite;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 128, 0.5));
+  }
+}
+
+@keyframes rotateChakra {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.saffron { color: var(--saffron); }
+.white { color: var(--white); }
+.green { color: var(--green); }
+
+/* Decorative Oranges */
+.orange-fruit {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ff8c42, #ff5500);
+  box-shadow: 0 0 40px rgba(255, 140, 66, 0.4);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.item-1 { width: 100px; height: 100px; top: 10%; right: 10%; }
+.item-2 { width: 60px; height: 60px; bottom: 20%; left: 5%; }
+.item-3 { width: 150px; height: 150px; bottom: 10%; right: 20%; }
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 3rem;
+    letter-spacing: 6px;
+  }
+}
+
+.slogan-hindi {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 140, 66, 0.3);
+  animation: fadeInSlogan 2s ease-in-out;
+}
+
+@keyframes fadeInSlogan {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

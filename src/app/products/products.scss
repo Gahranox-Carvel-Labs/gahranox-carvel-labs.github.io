@@ -1,0 +1,40 @@
+.section-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.product-card {
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+    border-color: var(--orange-primary);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+  }
+}
+
+.btn-outline-orange {
+  border: 1px solid var(--orange-primary);
+  color: var(--orange-primary);
+  border-radius: 20px;
+  padding: 8px 25px;
+  &:hover {
+    background: var(--orange-primary);
+    color: white;
+  }
+}
+
+.saffron { color: var(--saffron); }
+.green { color: var(--green); }
+.white { color: var(--white); }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}

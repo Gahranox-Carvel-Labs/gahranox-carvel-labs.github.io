@@ -1,0 +1,125 @@
+/* Global Space + Orange Fruit Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --space-bg: radial-gradient(circle at 20% 30%, #0a0f1a, #000000);
+  --orange-primary: #ff6b35;
+  --orange-hover: #ff8c42;
+  --orange-gradient: linear-gradient(135deg, #ff7e33, #ff5500);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #f0e6d0;
+  --saffron: #FF9933;
+  --white: #FFFFFF;
+  --green: #138808;
+  --ashoka-blue: #000080;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--space-bg);
+  background-attachment: fixed;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Stars Effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  box-shadow:
+    20vw 10vh 1px 1px #fff,
+    40vw 30vh 1px 1px #fff,
+    60vw 50vh 1px 1px #fff,
+    80vw 70vh 1px 1px #fff,
+    10vw 90vh 1px 1px #fff,
+    30vw 20vh 1px 1px #fff,
+    50vw 40vh 1px 1px #fff,
+    70vw 60vh 1px 1px #fff,
+    90vw 80vh 1px 1px #fff,
+    15vw 15vh 1px 1px #fff,
+    35vw 35vh 1px 1px #fff,
+    55vw 55vh 1px 1px #fff,
+    75vw 75vh 1px 1px #fff;
+  opacity: 0.3;
+  animation: twinkle 5s infinite ease-in-out alternate, space-parallax 100s linear infinite;
+}
+
+@keyframes space-parallax {
+  from { transform: scale(1) translateY(0); }
+  to { transform: scale(1.1) translateY(-50px); }
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  100% { opacity: 0.5; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange-primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-hover);
+}
+
+/* Common Styles */
+.btn-explore {
+  background: var(--orange-gradient);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.4);
+}
+.btn-explore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255, 85, 0, 0.6);
+  color: white;
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+.times-new-roman {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Decorative Orange Fruit Icon Styling */
+.orange-fruit-icon {
+  position: fixed;
+  font-size: 2rem;
+  color: #ff8c42;
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(255, 140, 66, 0.4));
+  animation: float-slow 15s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(20px, 40px) rotate(120deg); }
+  66% { transform: translate(-20px, 20px) rotate(240deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}

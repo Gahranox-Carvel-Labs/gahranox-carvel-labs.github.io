@@ -1,0 +1,35 @@
+.section-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.border-green { border: 1px solid var(--green); }
+.border-saffron { border: 1px solid var(--saffron); }
+
+.saffron { color: var(--saffron); }
+.green { color: var(--green); }
+.white { color: var(--white); }
+
+.custom-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  &:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--orange-primary);
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+    color: white;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}

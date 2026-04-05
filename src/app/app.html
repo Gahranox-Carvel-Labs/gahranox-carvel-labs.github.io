@@ -1,0 +1,15 @@
+<app-rocket-loader></app-rocket-loader>
+<app-header></app-header>
+
+<!-- Global Decorative Oranges -->
+<i class="bi bi-circle-fill orange-fruit-icon" style="top: 15%; left: 5%;"></i>
+<i class="bi bi-circle-fill orange-fruit-icon" style="top: 60%; left: 85%; animation-delay: -5s;"></i>
+<i class="bi bi-circle-fill orange-fruit-icon" style="top: 80%; left: 15%; animation-delay: -10s;"></i>
+
+<div class="app-container">
+  <app-sidebar-menu></app-sidebar-menu>
+
+  <main class="main-content" [class.sidebar-open]="sidebarService.isOpen()">
+    <router-outlet></router-outlet>
+  </main>
+</div>

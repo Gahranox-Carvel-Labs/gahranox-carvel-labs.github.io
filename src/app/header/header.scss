@@ -1,0 +1,40 @@
+.header {
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--orange-primary);
+  z-index: 1050;
+  color: var(--text-color);
+}
+
+.logo {
+  height: 60px;
+}
+
+.vertical-text {
+  font-weight: bold;
+  font-size: 0.55rem;
+  color: var(--orange-primary);
+  text-transform: uppercase;
+
+  .word-col {
+    line-height: 1.1;
+    span {
+      display: block;
+    }
+  }
+}
+
+.burger-btn {
+  background: transparent;
+  border: none;
+  color: var(--orange-primary);
+  font-size: 2rem;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.burger-btn:hover {
+  color: var(--orange-hover);
+}

@@ -1,27 +1,27 @@
 
 > gahranox-carvel@0.0.0 start
-> ng serve --port 4201
+> ng serve
 
 Component HMR has been enabled, see https://angular.dev/hmr for more info.
 ❯ Building...
 ✔ Building...
 Initial chunk files | Names         |  Raw size
-styles.css          | styles        | 383.54 kB |
+styles.css          | styles        | 412.49 kB |
+main.js             | main          | 127.17 kB |
 scripts.js          | scripts       | 107.69 kB |
-main.js             | main          |  88.11 kB |
 
-                    | Initial total | 579.34 kB
+                    | Initial total | 647.36 kB
 
-Application bundle generation complete. [3.130 seconds]
+Application bundle generation complete. [3.097 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4201/
+  ➜  Local:   http://localhost:4200/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 88.12 kB |
+Initial chunk files | Names |  Raw size
+main.js             | main  | 127.18 kB |
 
-Application bundle generation complete. [1.180 seconds]
+Application bundle generation complete. [1.348 seconds]
 
-Component update sent to client(s).
+Page reload sent to client(s).

@@ -1,85 +1,102 @@
+/**
+ * Home SCSS – Styles the main landing page with space + orange theme.
+ * Includes Indian flag colors for "Bharath" and animated Hindi slogan.
+ */
 .home-container {
-  min-height: 70vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(circle at 30% 40%, #0a0f1a, #000);
   position: relative;
   overflow: hidden;
 }
 
-.subtitle {
-  font-weight: 300;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #86868B;
-  font-size: 1.5rem;
+.hero-content {
+  z-index: 10;
+  max-width: 900px;
 }
 
-.main-title {
-  font-size: 6rem;
-  font-weight: 800;
-  letter-spacing: 12px;
-  text-transform: uppercase;
+.main-heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  color: white;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
 }
 
 .bharath-text {
-  span {
-    display: inline-block;
-    transition: transform 0.3s;
-    &:hover {
-      transform: translateY(-10px);
-    }
-  }
-
-  .chakra-icon {
-    position: absolute;
-    top: 5px;
-    right: -10px;
-    font-size: 1.5rem;
-    color: #000080; /* Navy Blue */
-    animation: rotateChakra 10s linear infinite;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 128, 0.5));
-  }
+  display: inline-block;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-@keyframes rotateChakra {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.saffron { color: var(--saffron); }
-.white { color: var(--white); }
-.green { color: var(--green); }
-
-/* Decorative Oranges */
-.orange-fruit {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #ff8c42, #ff5500);
-  box-shadow: 0 0 40px rgba(255, 140, 66, 0.4);
-  z-index: -1;
-  opacity: 0.6;
-}
-
-.item-1 { width: 100px; height: 100px; top: 10%; right: 10%; }
-.item-2 { width: 60px; height: 60px; bottom: 20%; left: 5%; }
-.item-3 { width: 150px; height: 150px; bottom: 10%; right: 20%; }
-
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 3rem;
-    letter-spacing: 6px;
-  }
-}
-
-.slogan-hindi {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
+.hindi-slogan {
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  color: #ff8c42;
+  margin-bottom: 2rem;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(255, 140, 66, 0.3);
-  animation: fadeInSlogan 2s ease-in-out;
+  animation: slideUp 1.5s ease-out;
 }
 
-@keyframes fadeInSlogan {
-  from { opacity: 0; transform: translateY(10px); }
+.tagline {
+  font-size: 1.2rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.btn-explore {
+  background: linear-gradient(135deg, #ff7e33, #ff5500);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline: auto;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 126, 51, 0.6);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.decorative-orb {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle at 30% 30%, #ff8c42, #ff5500);
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  z-index: 1;
+  animation: float 10s infinite ease-in-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
 }

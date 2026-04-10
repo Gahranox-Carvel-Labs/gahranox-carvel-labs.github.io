@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FounderCardComponent } from '../founder-card/founder-card';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,17 @@ import { FounderCardComponent } from '../founder-card/founder-card';
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  seo = inject(SeoService);
+
+  ngOnInit() {
+    this.seo.updateTitle('About Us');
+    this.seo.updateMetaTags(
+      'Learn about the visionary team at Gahranox Carvel building the future of AI and security systems.',
+      'Gahranox Carvel Team, Founders, AI, Security Systems, Startup'
+    );
+  }
+
   founders = [
     {
       name: 'ABDUL FAHEEM A',

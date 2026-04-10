@@ -1,47 +1,40 @@
-<div class="content-container animate-fade-in">
-  <h1 class="display-3 mb-5 section-title saffron">Join Our Mission</h1>
+<div class="careers-container">
+  <!-- Animated background elements (stars, floating oranges) -->
+  <div class="bg-orange-floating"></div>
+  <div class="bg-stars"></div>
 
-  <div class="row align-items-center">
-    <div class="col-lg-6">
-      <p class="lead mb-4">We are always looking for visionary talent to help us build the future of Bharat.</p>
+  <!-- Main content card -->
+  <div class="careers-card" @fadeSlideUp>
+    <h1 class="glow-text text-center">
+      Ignite Your Potential at <span class="brand">Gahranox Carvel Labs</span>
+    </h1>
 
-      <div class="career-list mt-5">
-        <div class="career-item p-3 mb-3 glass-panel">
-          <div class="d-flex justify-content-between align-items-center">
-            <div>
-              <h4 class="mb-1 saffron">Systems Engineer</h4>
-              <p class="mb-0 text-muted small"><i class="bi bi-geo-alt me-1"></i> Bengaluru, IN | Full-time</p>
-            </div>
-            <button class="btn btn-explore btn-sm">Apply</button>
-          </div>
-        </div>
-
-        <div class="career-item p-3 mb-3 glass-panel">
-          <div class="d-flex justify-content-between align-items-center">
-            <div>
-              <h4 class="mb-1 white">Aerospace Specialist</h4>
-              <p class="mb-0 text-muted small"><i class="bi bi-geo-alt me-1"></i> Hyderabad, IN | Full-time</p>
-            </div>
-            <button class="btn btn-explore btn-sm">Apply</button>
-          </div>
-        </div>
-
-        <div class="career-item p-3 mb-3 glass-panel">
-          <div class="d-flex justify-content-between align-items-center">
-            <div>
-              <h4 class="mb-1 green">UX Designer</h4>
-              <p class="mb-0 text-muted small"><i class="bi bi-geo-alt me-1"></i> Remote | Part-time</p>
-            </div>
-            <button class="btn btn-explore btn-sm">Apply</button>
-          </div>
-        </div>
-      </div>
+    <div class="team-description">
+      <p>
+        We are a team of visionaries, engineers, and creators dedicated to pushing the boundaries of AI and Cybersecurity.
+        We believe in building technology that not only solves problems but shapes the future.
+        Passion, innovation, and excellence are at the core of everything we do.
+      </p>
     </div>
 
-    <div class="col-lg-6 d-none d-lg-block">
-      <div class="rocket-animation text-center">
-        <i class="bi bi-rocket white display-1"></i>
-      </div>
+    <div class="rocket-icon d-flex flex-column align-items-center">
+      <div class="css-rocket"></div>   <!-- pure CSS rocket (small) -->
     </div>
+
+    <div class="coming-soon-card">
+      <h2 class="orange-accent">Positions Opening Soon</h2>
+      <p>
+        We are not checking applications right now, but we are gearing up for our next big growth phase.
+        Please check back soon for exciting opportunities to join our team.
+      </p>
+      <button class="notify-btn" (click)="showNotifyToast()">
+        Notify Me <i class="bi bi-bell ms-2"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Optional toast message (simple alert) -->
+  <div class="toast-notify" *ngIf="showToast" @fadeOut>
+    Thanks! We'll let you know when positions open.
   </div>
 </div>

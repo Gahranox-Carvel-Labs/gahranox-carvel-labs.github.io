@@ -18,7 +18,7 @@ export class SidebarService {
   private checkScreenSize() {
     if (typeof window !== 'undefined') {
       // For mobile hide, for large screens show by default
-      if (window.innerWidth < 992) {
+      if (window.innerWidth < 768) {
         this._isOpen.set(false);
       } else {
         this._isOpen.set(true);

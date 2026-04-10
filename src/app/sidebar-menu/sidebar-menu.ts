@@ -14,7 +14,7 @@ export class SidebarMenuComponent {
   sidebarService = inject(SidebarService);
 
   closeSidebarOnMobile() {
-    if (typeof window !== 'undefined' && window.innerWidth < 992) {
+    if (typeof window !== 'undefined' && window.innerWidth < 768) {
       this.sidebarService.close();
     }
   }

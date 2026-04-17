@@ -1,0 +1,11 @@
+<div class="founder-card text-center p-4 h-100 glass-panel">
+  <div class="img-wrapper mb-3">
+    <img [src]="imageUrl" [alt]="name" class="founder-img shadow" crossorigin="anonymous">
+  </div>
+  <h3 class="founder-name mb-1 times-new-roman">{{ name }}</h3>
+  <p class="founder-title mb-3">{{ title }}</p>
+  <p class="founder-bio mb-4">{{ bio }}</p>
+  <a [href]="linkedinUrl" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+    <i class="bi bi-linkedin me-2"></i> Connect on LinkedIn
+  </a>
+</div>

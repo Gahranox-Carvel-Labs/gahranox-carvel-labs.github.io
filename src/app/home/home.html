@@ -1,0 +1,30 @@
+<!-- Main home section with space + orange theme -->
+<div class="home-container">
+  <div class="hero-content" data-aos="fade-up">
+    <h1 class="main-heading">Building the future of
+      <span class="bharath-text">
+        @for (letter of bharathLetters; track $index) {
+          <span [style.color]="letter.color">{{ letter.char }}</span>
+        }
+      </span>
+    </h1>
+
+    <h2 class="hindi-slogan" data-aos="fade-up" data-aos-delay="200">भारत की नयी कहानी</h2>
+    <h2 class="tamil-slogan" data-aos="fade-up" data-aos-delay="300">பாரதத்தின் புதிய கதை</h2>
+
+    <p class="tagline" data-aos="fade-up" data-aos-delay="400">
+      Architecting the convergence of AI, Cybersecurity, and Limitless Energy
+      for a post-scarcity civilization.
+    </p>
+
+    <div class="cta-actions" data-aos="zoom-in" data-aos-delay="600">
+      <button class="btn-explore" (click)="exploreUs()">
+        Explore us <i class="bi bi-arrow-right"></i>
+      </button>
+      <h3 class="roman-slogan" data-aos="fade-up" data-aos-delay="700">Bharath ka naya kahani</h3>
+    </div>
+  </div>
+
+  <!-- Decorative Orange Orb -->
+  <div class="decorative-orb"></div>
+</div>

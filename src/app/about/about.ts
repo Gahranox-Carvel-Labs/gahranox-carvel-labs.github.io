@@ -2,6 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FounderCardComponent } from '../founder-card/founder-card';
 import { SeoService } from '../services/seo.service';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-about',
@@ -19,6 +20,11 @@ export class AboutComponent implements OnInit {
       'Learn about the visionary team at Gahranox Carvel building the future of AI and security systems.',
       'Gahranox Carvel Team, Founders, AI, Security Systems, Startup'
     );
+    
+    // Safety refresh for animations to ensure they trigger on large screens
+    setTimeout(() => {
+      AOS.refresh();
+    }, 200);
   }
 
   founders = [

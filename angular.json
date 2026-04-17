@@ -31,7 +31,6 @@
                 "input": "public"
               },
               "src/assets",
-              "src/favicon.ico",
               "src/robots.txt",
               "src/sitemap.xml"
             ],

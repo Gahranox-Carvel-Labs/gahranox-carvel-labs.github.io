@@ -36,7 +36,7 @@ export class ProductsComponent implements OnInit {
       category: 'SaaS',
       description: 'Next-gen billing and invoicing SaaS for modern businesses.',
       images: [
-        'assets/images/website logo.png' // Placeholder for Bill0 Logo
+        'https://bill0.gahranoxcarvel.in/Bill0logoCropped.png'
       ],
       link: 'https://bill0.gahranoxcarvel.in',
       buttonText: 'Explore',
@@ -49,7 +49,9 @@ export class ProductsComponent implements OnInit {
       category: 'Hardware',
       description: 'High-speed 64GB USB 3.0 pendrive with encrypted storage and space-grade durability.',
       images: [
-        'assets/images/website logo.png' // Placeholder for Pendrive Image
+        'assets/images/products/pendrive/pendrive-1.png',
+        'assets/images/products/pendrive/pendrive-2.png',
+        'assets/images/products/pendrive/pendrive-3.png'
       ],
       link: '/coming-soon',
       buttonText: 'Buy Now',

@@ -1,0 +1,34 @@
+.app-container {
+  display: flex;
+  min-height: calc(100vh - 80px); /* Changed from 70px to 80px */
+  margin-top: 80px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  transition: margin-left 0.3s ease;
+  min-height: 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .main-content.sidebar-open {
+    margin-left: 260px;
+  }
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 140, 66, 0.15) 0%, rgba(255, 85, 0, 0.05) 40%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.05s ease-out;
+  left: -300px; /* Initially off-screen */
+  top: -300px;
+  filter: blur(10px);
+}

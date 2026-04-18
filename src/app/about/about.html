@@ -1,0 +1,77 @@
+<div class="about-page">
+  <div class="container py-5">
+    <section class="hero text-center mb-5">
+      <h1 class="display-3 fw-bold orange-glow times-new-roman mb-2">Gahranox Carvel Labs Technologies</h1>
+      <p class="h3 tagline text-light opacity-75">Becoming the next global giant.</p>
+    </section>
+
+    <div class="row g-5">
+      <div class="col-lg-8 offset-lg-2">
+        <section class="belief mb-5 glass-card p-4 p-md-5" data-aos="fade-up">
+          <h2 class="section-title mb-4">Our Core Belief</h2>
+          <p class="lead text-light">The future is not something we enter. It is something we build, atom by atom, watt by watt, and line of code by line of code. Humanity's greatest challenges demand solutions that are not merely sustainable, but generative—solutions that give back more than they take, empowering both people and the planet.</p>
+        </section>
+
+        <section class="vision mb-5 glass-card p-4 p-md-5" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="section-title mb-4">Our Vision</h2>
+          <p class="text-light fs-5">To architect a seamless reality where abundant, intelligent energy and intuitive technology converge to elevate every human endeavor and heal our planetary home. We envision a world where the energy that powers a city is as clean, efficient, and dynamically distributed as the data in a cloud.</p>
+        </section>
+
+        <section class="mission mb-5">
+          <h2 class="section-title text-center mb-5" data-aos="fade-up">Our Mission</h2>
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="mission-card h-100 p-4 orange-border glass-card">
+                <h3 class="h4 orange-text mb-3">As an Energy Giant</h3>
+                <p class="text-light">To re-engineer the world's energy foundation by mastering the conversion and distribution of power with unprecedented efficiency and intelligence.</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="mission-card h-100 p-4 orange-border glass-card">
+                <h3 class="h4 orange-text mb-3">As a Technology Giant</h3>
+                <p class="text-light">To build the intelligent systems that optimize our world, making scarcity a relic of the past through advanced AI and resilient engineering.</p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-center fs-5 italic text-light opacity-75">We are not a company with two divisions. We are a single engine of progress.</p>
+        </section>
+
+        <section class="big-talks mb-5 glass-card p-4 p-md-5" data-aos="fade-up">
+          <h2 class="section-title mb-5">The Big Talks</h2>
+          <div class="quotes-grid">
+            <blockquote class="quote-item p-3 border-start border-4 border-orange mb-4">
+              <p class="mb-0 fs-5 fw-light">“We are not content with net-zero. We are building a net-positive future.”</p>
+            </blockquote>
+            <blockquote class="quote-item p-3 border-start border-4 border-orange mb-4">
+              <p class="mb-0 fs-5 fw-light">“We will not just simulate intelligence; we will embed it in the infrastructure of civilization.”</p>
+            </blockquote>
+            <blockquote class="quote-item p-3 border-start border-4 border-orange mb-4">
+              <p class="mb-0 fs-5 fw-light">“The next pivotal platform won't be a device or an app. It will be the planet itself.”</p>
+            </blockquote>
+            <blockquote class="quote-item p-3 border-start border-4 border-orange mb-4">
+              <p class="mb-0 fs-5 fw-light">“What the integrated circuit was to the 20th century, the fusion-energy-compute nexus will be to the 21st.”</p>
+            </blockquote>
+            <blockquote class="quote-item p-3 border-start border-4 border-orange mb-4">
+              <p class="mb-0 fs-5 fw-light">“We aim to make scarcity a relic of the past in two domains: intelligence and energy.”</p>
+            </blockquote>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="founders py-5">
+      <h2 class="section-title text-center mb-5">About the Authors</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6" *ngFor="let f of founders; let i = index" [attr.data-aos]="'zoom-in'" [attr.data-aos-delay]="i * 100">
+          <app-founder-card
+            [name]="f.name"
+            [title]="f.title"
+            [bio]="f.bio"
+            [linkedinUrl]="f.linkedin"
+            [imageUrl]="f.image">
+          </app-founder-card>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

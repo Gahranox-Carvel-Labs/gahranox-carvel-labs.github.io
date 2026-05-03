@@ -72,17 +72,25 @@
                   {{ product.description }}
                 </p>
 
-                <div class="product-footer mt-auto">
+                <div class="product-footer mt-auto d-flex gap-2 flex-wrap">
+                  <!-- Primary Button -->
                   <a *ngIf="product.isExternal"
                      [href]="product.link"
                      target="_blank"
-                     class="btn-product-action w-100">
+                     class="btn-product-action flex-grow-1">
                     {{ product.buttonText }} <i class="bi bi-box-arrow-up-right ms-2"></i>
                   </a>
                   <a *ngIf="!product.isExternal"
                      [routerLink]="product.link"
-                     class="btn-product-action w-100">
+                     class="btn-product-action flex-grow-1">
                     {{ product.buttonText }} <i class="bi bi-cart3 ms-2"></i>
+                  </a>
+
+                  <!-- Secondary Button -->
+                  <a *ngIf="product.secondaryButtonText"
+                     [routerLink]="product.secondaryButtonLink"
+                     class="btn-product-action secondary flex-grow-1">
+                    {{ product.secondaryButtonText }} <i class="bi bi-box-seam ms-2"></i>
                   </a>
                 </div>
               </div>

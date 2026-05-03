@@ -25,7 +25,7 @@ export class ProductsComponent implements OnInit {
     this.seo.updateTitle('Our Products');
     this.seo.updateMetaTags(
       'Explore Gahranox Carvel’s innovative SaaS platforms and hardware security solutions.',
-      'SaaS, Hardware Security, Bill0, Gahranox Secure Drive, 64GB GC Pendrive'
+      'SaaS, Hardware Security, Bill0, Hacker Box, Admin Box, Custom Encrypted Pendrive, Custom Branded Bulk Pendrives, 64GB GC Pendrive'
     );
   }
 
@@ -53,8 +53,77 @@ export class ProductsComponent implements OnInit {
         'assets/images/products/pendrive/pendrive-2.png',
         'assets/images/products/pendrive/pendrive-3.png'
       ],
-      link: '/coming-soon',
+      link: '/contact',
       buttonText: 'Buy Now',
+      secondaryButtonText: 'Order in Bulk',
+      secondaryButtonLink: '/contact',
+      isExternal: false,
+      currentImageIndex: 0
+    },
+    {
+      id: 3,
+      name: 'Hacker Box',
+      category: 'Hardware',
+      description: 'A specialized 64GB pendrive pre-loaded with all major Linux distributions and custom operating systems for penetration testing and development.',
+      images: [
+        'assets/images/products/hacker-box/box-1.png',
+        'assets/images/products/hacker-box/box-2.png',
+        'assets/images/products/hacker-box/box-3.png'
+      ],
+      link: '/contact',
+      buttonText: 'Buy Now',
+      secondaryButtonText: 'Order in Bulk',
+      secondaryButtonLink: '/contact',
+      isExternal: false,
+      currentImageIndex: 0
+    },
+    {
+      id: 4,
+      name: 'Admin Box',
+      category: 'Hardware',
+      description: 'The ultimate systems administration toolkit in a high-speed pendrive. Includes automation scripts, custom tools, and a bootable live Linux distro.',
+      images: [
+        'assets/images/products/admin-box/box-1.png',
+        'assets/images/products/admin-box/box-2.png',
+        'assets/images/products/admin-box/box-3.png'
+      ],
+      link: '/contact',
+      buttonText: 'Buy Now',
+      secondaryButtonText: 'Order in Bulk',
+      secondaryButtonLink: '/contact',
+      isExternal: false,
+      currentImageIndex: 0
+    },
+    {
+      id: 5,
+      name: 'Custom Encrypted Pendrive',
+      category: 'Hardware',
+      description: 'Bespoke encrypted storage solutions tailored to your security needs. Featuring custom password protocols and multi-layer hardware-software encryption.',
+      images: [
+        'assets/images/products/encrypted-pendrive/drive-1.png',
+        'assets/images/products/encrypted-pendrive/drive-2.png',
+        'assets/images/products/encrypted-pendrive/drive-3.png'
+      ],
+      link: '/contact',
+      buttonText: 'Buy Now',
+      secondaryButtonText: 'Order in Bulk',
+      secondaryButtonLink: '/contact',
+      isExternal: false,
+      currentImageIndex: 0
+    },
+    {
+      id: 6,
+      name: 'Custom Branded Bulk Pendrives',
+      category: 'Hardware',
+      description: 'Premium quality USB drives customized with your company branding. Available in bulk for corporate gifting, events, and organizational needs.',
+      images: [
+        'assets/images/products/bulk-pendrives/drive-1.png',
+        'assets/images/products/bulk-pendrives/drive-2.png'
+      ],
+      link: '/contact',
+      buttonText: 'Buy Now',
+      secondaryButtonText: 'Order in Bulk',
+      secondaryButtonLink: '/contact',
       isExternal: false,
       currentImageIndex: 0
     }

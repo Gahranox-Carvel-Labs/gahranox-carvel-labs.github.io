@@ -140,6 +140,16 @@
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(255, 85, 0, 0.4);
   }
+  &.secondary {
+    background: transparent;
+    border: 1px solid #ff7e33;
+    color: #ff7e33;
+
+    &:hover {
+      background: rgba(255, 126, 51, 0.1);
+      color: #ff7e33;
+    }
+  }
 }
 
 /* Responsiveness */
